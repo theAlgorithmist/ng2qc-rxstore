@@ -17,7 +17,7 @@ All other components are children of the main calculator component.  Angular 2 p
 
 The calculator consists of three quaternion components (two input and one result), two memory bars (a horizontal area relating to adding/recall from memory) and a clear button, as shown below
 
-- image -
+![Quaternion Cacluator](https://image-store.slidesharecdn.com/86681aee-98a9-4e80-82fd-c4dde4021f4e-original.jpeg "Quaternion Calculator")
 
 The quaternion component representing inputs and result uses an _EventEmitter_ to stream outputs.  It may be used in any application, calculator or otherwise, that requires a quaternion.  This component is not tied to any concept of a model.  
 
