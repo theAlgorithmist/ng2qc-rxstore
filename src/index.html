@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Angular 2 Quaternion Calculator with @ngrx/store</title>
+  <base href="/">
+
+  {{#unless environment.production}}
+  <script src="/ember-cli-live-reload.js" type="text/javascript"></script>
+  {{/unless}}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    body 
+    { 
+      font-size : 15px; 
+      font-family : Arial, Helvetica, Geneva, sans-serif; 
+      padding: 20px;
+    }
+
+    .largeText
+    {
+      font-size:20px;
+      font-weight:bold;
+    }
+
+    .rounded
+    {
+      width: 100%;
+      max-width:440px;
+      padding: 16px;
+      border: 2px solid #dddddd;
+      -moz-border-radius: 12px;
+      -webkit-border-radius: 12px;
+      -o-border-radius: 12px;
+      border-radius:12px;
+    }
+  </style>
+</head>
+<body>
+  <!-- This is a verbose tag and correpsonding component name, but it serves to differentiate from prior versions 
+       of the quaternion calculator, particularly that this one uses @ngrx/store to illustrate Flux-stye application
+       flow and a Redux-style store -->
+  <ng2qc-rxstore-app>Loading...</ng2qc-rxstore-app>
+
+    {{#each scripts.polyfills}}<script src="{{.}}"></script>{{/each}}
+    <script>
+      System.import('system-config.js').then(function () {
+        System.import('main');
+      }).catch(console.error.bind(console));
+    </script>
+
+</body>
+</html>
