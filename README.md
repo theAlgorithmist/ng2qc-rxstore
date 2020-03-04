@@ -84,7 +84,7 @@ Apache 2.0
 
 [//]: # (kudos http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
-[The Algorithmist]: <http://algorithmist.net>
+[The Algorithmist]: <https://www.linkedin.com/in/jimarmstrong>
 [Redux-style state mangement powered by RxJs]: <https://github.com/ngrx/store>
 [Comprehensive introduction to @ngrx/store]: <https://gist.github.com/btroncone/a6e4347326749f938510>
 [Introduction to Reactive Programming]: <https://gist.github.com/staltz/868e7e9bc2a7b8c1f754>
